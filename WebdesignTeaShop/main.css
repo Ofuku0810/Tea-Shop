@@ -92,7 +92,8 @@ html{
 }
 
 .img{
-    width : 100%;
+    max-width : 100%;
+
 }
 
 .app{
@@ -105,23 +106,20 @@ html{
 }
 
 .photo-container {
-    width: 100%;
+    width: 100vw;
     height: 600px;
     background-image: url("image/womandrinkingahottea.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 150px;
+    margin-top: 100px;
     position: relative;
 }
 
-.trend {
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
+@media (max-width: 768px){
+    .photo-container{
+        background-image: url("amallwomandrinkingahottea.jpeg");
+    }
 }
-
 .section-title {
     text-align: center;
     margin-bottom: 20px;
@@ -144,11 +142,68 @@ html{
     margin-top: 10px;
 }
 
+.trend{
 
-.product {
-    /* Styling for each product item */
-    /* You can set a fixed width, padding, or margin here */
+    width: 100vw;
+    height: 50vw;
+    background-color: white;
+    text-align: center;
+    margin-top: 100px;
+
 }
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.trended-product{
+padding: 0 15px;
+}
+
+.trended-product-image{
+    width: 300px;
+    height: 300px;
+}
+
+.trended-items {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.trended-discription {
+    font-size: 1.8rem;
+    padding-top: 100px;
+    font-weight: 200;
+    margin-top: -50px;
+}
+
+.discrition{
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.trended-link:hover{
+    background-color: darkred;
+}
+
+.story{
+    width: 100vw;
+    height: 550px;
+    background-image: url("image/small-woman-pick-the-tea-leaveのコピー.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(75%);
+
+}
+@media (max-width: 768px){
+    .story{
+        background-image: url("image/small-woman-pick-the-tea-leave.jpeg");
+        filter: brightness(75%);
+    }
 
 
 
